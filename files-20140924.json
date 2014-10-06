@@ -1,0 +1,60 @@
+{
+  "zonename": "9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44",
+  "autoboot": true,
+  "brand": "joyent",
+  "limit_priv": "default",
+  "v": 1,
+  "create_timestamp": "2014-09-15T00:01:07.108Z",
+  "image_uuid": "d34c301e-10c3-11e4-9b79-5f67ca448df0",
+  "cpu_shares": 100,
+  "zfs_io_priority": 100,
+  "max_lwps": 2000,
+  "max_physical_memory": 1024,
+  "max_locked_memory": 1024,
+  "max_swap": 1024,
+  "billing_id": "00000000-0000-0000-0000-000000000000",
+  "owner_uuid": "00000000-0000-0000-0000-000000000000",
+  "tmpfs": 1024,
+  "hostname": "files",
+  "dns_domain": "local",
+  "resolvers": [
+    "192.168.11.1"
+  ],
+  "alias": "files",
+  "nics": [
+    {
+      "interface": "net0",
+      "mac": "32:f4:0e:80:81:54",
+      "nic_tag": "admin",
+      "gateway": "192.168.11.1",
+      "ip": "192.168.11.20",
+      "netmask": "255.255.255.0",
+      "primary": true
+    }
+  ],
+  "datasets": [
+    "zones/9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44/data",
+    "zones/files/data",
+    "zones/files/backups",
+    "zones/files/projects"
+  ],
+  "uuid": "9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44",
+  "zone_state": "running",
+  "zonepath": "/zones/9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44",
+  "zoneid": 6,
+  "last_modified": "2014-09-17T03:03:55.000Z",
+  "firewall_enabled": false,
+  "server_uuid": "00d53b1e-d21d-b211-8000-e4115b12c2a7",
+  "platform_buildstamp": "20140404T001635Z",
+  "state": "running",
+  "customer_metadata": {},
+  "internal_metadata": {},
+  "routes": {},
+  "tags": {},
+  "quota": 2000,
+  "zfs_root_recsize": 131072,
+  "zfs_filesystem": "zones/9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44",
+  "zpool": "zones",
+  "zfs_data_recsize": 131072,
+  "snapshots": []
+}

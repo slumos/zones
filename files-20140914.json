@@ -1,0 +1,58 @@
+{
+  "zonename": "files",
+  "autoboot": false,
+  "brand": "joyent",
+  "limit_priv": "default",
+  "create_timestamp": "2013-02-17T23:31:50.743Z",
+  "image_uuid": "aa583f78-3d83-11e2-9188-fff9b605718d",
+  "cpu_shares": 100,
+  "zfs_io_priority": 100,
+  "max_lwps": 2000,
+  "billing_id": "00000000-0000-0000-0000-000000000000",
+  "owner_uuid": "00000000-0000-0000-0000-000000000000",
+  "hostname": "files",
+  "dns_domain": "local",
+  "alias": "files",
+  "datasets": [
+    "zones/files/data",
+    "zones/files/backups",
+    "zones/files/projects"
+  ],
+  "max_physical_memory": 1024,
+  "max_locked_memory": 1024,
+  "tmpfs": 1024,
+  "max_swap": 1024,
+  "resolvers": [
+    "192.168.3.1"
+  ],
+  "nics": [
+    {
+      "interface": "net0",
+      "mac": "12:c9:d2:42:62:8c",
+      "nic_tag": "admin",
+      "gateway": "192.168.3.1",
+      "ip": "192.168.3.20",
+      "netmask": "255.255.255.0",
+      "primary": true
+    }
+  ],
+  "v": 1,
+  "uuid": "b3b5d71f-1a67-4f70-83e8-797b78be3ded",
+  "zone_state": "installed",
+  "zonepath": "/zones/files",
+  "zoneid": null,
+  "firewall_enabled": false,
+  "server_uuid": "00d53b1e-d21d-b211-8000-e4115b12c2a7",
+  "platform_buildstamp": "20140404T001635Z",
+  "state": "stopped",
+  "customer_metadata": {},
+  "internal_metadata": {},
+  "routes": {},
+  "tags": {},
+  "quota": 2000,
+  "zfs_root_recsize": 131072,
+  "zfs_filesystem": "zones/files",
+  "zpool": "zones",
+  "zfs_data_recsize": 131072,
+  "snapshots": []
+}

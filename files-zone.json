@@ -1,0 +1,40 @@
+{
+  "alias": "files",
+  "brand": "joyent",
+  "image_uuid": "d34c301e-10c3-11e4-9b79-5f67ca448df0",
+  "autoboot": true,
+  "delegate_dataset": true,
+  "quota": 2000,
+  "cpu_shares": 100,
+  "max_physical_memory": 1024,
+  "max_locked_memory": 1024,
+  "tmpfs": 1024,
+  "max_swap": 1024,
+  "dns_domain": "local",
+  "hostname": "files",
+  "resolvers": [
+    "192.168.3.1"
+   ],
+   "nics": [
+     {
+       "nic_tag": "admin",
+       "ip": "192.168.3.20",
+       "netmask": "255.255.255.0",
+       "gateway": "192.168.3.1"
+     }
+  ],
+  "datasets": [
+    "zones/9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44/data",
+    "zones/files/data",
+    "zones/files/data/home/slumos",
+    "zones/files/backups",
+    "zones/files/projects"
+  ],
+  "filesystems": [
+    {
+      "type": "lofs",
+      "source": "/zones/files/pkgsrc/2014Q2",
+      "target": "/opt"
+    }
+  ]
+}

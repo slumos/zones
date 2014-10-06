@@ -1,0 +1,9 @@
+{
+  "filesystems": [
+    {
+      "type": "lofs",
+      "source": "/zones/files/pkgsrc/2014Q2",
+      "target": "/opt"
+    }
+  ]
+}
