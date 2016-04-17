@@ -1,0 +1,34 @@
+{
+  "image_uuid": "842e6fa6-6e9b-11e5-8402-1b490459e334",
+  "autoboot": true,
+  "brand": "joyent",
+  "cpu_shares": 100,
+  "zfs_io_priority": 100,
+  "max_lwps": 2000,
+  "max_physical_memory": 1024,
+  "max_swap": 1024,
+  "tmpfs": 1024,
+  "hostname": "files",
+  "dns_domain": "local",
+  "resolvers": [
+    "192.168.3.1",
+    "8.8.8.8",
+    "8.8.4.4"
+  ],
+  "alias": "2015Q3-files",
+  "nics": [
+    {
+      "interface": "net0",
+      "nic_tag": "admin",
+      "gateway": "192.168.3.1",
+      "ip": "192.168.3.20",
+      "netmask": "255.255.255.0",
+      "primary": true
+    }
+  ],
+  "filesystems": [
+    { "source": "/home/slumos", "target": "/home/slumos", "type": "lofs" },
+    { "source": "/zones/projects", "target": "/projects", "type": "lofs" },
+    { "source": "/zones/timemachine/slumos", "target": "/timemachine/slumos", "type": "lofs"}
+  ]
+}

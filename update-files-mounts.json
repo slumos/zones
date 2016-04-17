@@ -1,0 +1,8 @@
+{
+  "filesystems": [
+    { "source": "/zones/pkgsrc/2015Q3", "target": "/opt", "type": "lofs" },
+    { "source": "/home/slumos", "target": "/home/slumos", "type": "lofs" },
+    { "source": "/zones/projects", "target": "/projects", "type": "lofs" },
+    { "source": "/zones/timemachine/slumos", "target": "/timemachine/slumos", "type": "lofs"}
+  ]
+}

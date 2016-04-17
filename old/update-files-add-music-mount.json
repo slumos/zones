@@ -1,0 +1,15 @@
+{
+  "filesystems":
+  [
+    {
+      "type": "lofs",
+      "source": "/music",
+      "target": "/music"
+    }
+    ,{
+      "type": "lofs",
+      "source": "/data/ml",
+      "target": "/ml"
+    }
+  ]
+}

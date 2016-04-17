@@ -1,0 +1,37 @@
+{
+  "brand": "joyent-minimal",
+  "image_uuid": "c540b62c-beb2-11e5-8512-8b1694a57f84",
+  "hostname": "tmp",
+  "dns_domain": "local",
+  "resolvers": [
+    "192.168.3.1",
+    "8.8.8.8",
+    "8.8.4.4"
+  ],
+  "alias": "tmp",
+  "filesystems": [
+    {
+      "source": "/home/slumos",
+      "target": "/home/slumos",
+      "type": "lofs"
+    },
+    {
+      "source": "/zones/projects",
+      "target": "/projects",
+      "type": "lofs"
+    }
+  ],
+  "nics": [
+    {
+      "interface": "net0",
+      "nic_tag": "admin",
+      "gateway": "192.168.3.1",
+      "gateways": [
+        "192.168.3.1"
+      ],
+      "netmask": "255.255.255.0",
+      "ip": "192.168.3.42",
+      "primary": true
+    }
+  ]
+}

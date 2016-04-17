@@ -1,0 +1,116 @@
+create -b
+set zonepath=/zones/9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44
+set brand=joyent
+set autoboot=true
+set limitpriv=default
+set ip-type=exclusive
+set uuid=9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44
+add fs
+set dir=/opt
+set special=/zones/files/pkgsrc/2014Q2
+set type=lofs
+end
+add net
+set physical=net0
+set mac-addr=32:f4:0e:80:81:54
+set global-nic=admin
+add property (name=gateway,value="192.168.3.1")
+add property (name=ip,value="192.168.3.20")
+add property (name=netmask,value="255.255.255.0")
+add property (name=primary,value="true")
+end
+add rctl
+set name=zone.cpu-shares
+add value (priv=privileged,limit=100,action=none)
+end
+add rctl
+set name=zone.zfs-io-priority
+add value (priv=privileged,limit=100,action=none)
+end
+add rctl
+set name=zone.max-lwps
+add value (priv=privileged,limit=2000,action=deny)
+end
+add rctl
+set name=zone.max-physical-memory
+add value (priv=privileged,limit=1073741824,action=deny)
+end
+add rctl
+set name=zone.max-locked-memory
+add value (priv=privileged,limit=1073741824,action=deny)
+end
+add rctl
+set name=zone.max-swap
+add value (priv=privileged,limit=1073741824,action=deny)
+end
+add attr
+set name=vm-version
+set type=string
+set value=1
+end
+add attr
+set name=create-timestamp
+set type=string
+set value=2014-09-15T00:01:07.108Z
+end
+add attr
+set name=dataset-uuid
+set type=string
+set value=d34c301e-10c3-11e4-9b79-5f67ca448df0
+end
+add attr
+set name=billing-id
+set type=string
+set value=00000000-0000-0000-0000-000000000000
+end
+add attr
+set name=owner-uuid
+set type=string
+set value=00000000-0000-0000-0000-000000000000
+end
+add attr
+set name=tmpfs
+set type=string
+set value=1024
+end
+add attr
+set name=hostname
+set type=string
+set value=files
+end
+add attr
+set name=dns-domain
+set type=string
+set value=local
+end
+add attr
+set name=resolvers
+set type=string
+set value=192.168.11.1
+end
+add attr
+set name=alias
+set type=string
+set value=ZmlsZXM=
+end
+add dataset
+set name=zones/9ea871ef-bcee-43e1-a0a6-cdfec9fd1f44/data
+end
+add dataset
+set name=zones/files/data
+end
+add dataset
+set name=zones/files/backups
+end
+add dataset
+set name=zones/files/projects
+end
+add dataset
+set name=zones/data/timemachine
+end
+add dataset
+set name=zones/data/timemachine/karen
+end
+add dataset
+set name=zones/data/timemachine/steven
+end

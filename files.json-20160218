@@ -1,0 +1,84 @@
+{
+  "zonename": "e78e4bf2-25c0-4e25-9912-899cfb790e4d",
+  "autoboot": true,
+  "brand": "joyent",
+  "limit_priv": "default",
+  "v": 1,
+  "create_timestamp": "2015-12-26T08:48:20.817Z",
+  "image_uuid": "842e6fa6-6e9b-11e5-8402-1b490459e334",
+  "cpu_shares": 100,
+  "max_lwps": 2000,
+  "max_msg_ids": 4096,
+  "max_sem_ids": 4096,
+  "max_shm_ids": 4096,
+  "max_shm_memory": 1024,
+  "zfs_io_priority": 100,
+  "max_physical_memory": 1024,
+  "max_locked_memory": 1024,
+  "max_swap": 1024,
+  "billing_id": "00000000-0000-0000-0000-000000000000",
+  "owner_uuid": "00000000-0000-0000-0000-000000000000",
+  "tmpfs": 1024,
+  "hostname": "files",
+  "dns_domain": "local",
+  "resolvers": [
+    "192.168.3.1",
+    "8.8.8.8",
+    "8.8.4.4"
+  ],
+  "alias": "2015Q3-files",
+  "filesystems": [
+    {
+      "source": "/home/slumos",
+      "target": "/home/slumos",
+      "type": "lofs"
+    },
+    {
+      "source": "/zones/projects",
+      "target": "/projects",
+      "type": "lofs"
+    },
+    {
+      "source": "/zones/timemachine/slumos",
+      "target": "/timemachine/slumos",
+      "type": "lofs"
+    }
+  ],
+  "nics": [
+    {
+      "interface": "net0",
+      "mac": "82:c9:e6:e0:c1:70",
+      "nic_tag": "admin",
+      "gateway": "192.168.3.1",
+      "gateways": [
+        "192.168.3.1"
+      ],
+      "netmask": "255.255.255.0",
+      "ip": "192.168.3.20",
+      "ips": [
+        "192.168.3.20/24"
+      ],
+      "primary": true
+    }
+  ],
+  "uuid": "e78e4bf2-25c0-4e25-9912-899cfb790e4d",
+  "zone_state": "running",
+  "zonepath": "/zones/e78e4bf2-25c0-4e25-9912-899cfb790e4d",
+  "zoneid": 1,
+  "last_modified": "2016-02-18T06:20:22.000Z",
+  "firewall_enabled": false,
+  "server_uuid": "00d53b1e-d21d-b211-8000-e4115b12c2a7",
+  "platform_buildstamp": "20151126T062747Z",
+  "state": "running",
+  "boot_timestamp": "2016-02-18T06:20:22.000Z",
+  "pid": 3969,
+  "customer_metadata": {},
+  "internal_metadata": {},
+  "routes": {},
+  "tags": {},
+  "quota": 10,
+  "zfs_root_recsize": 131072,
+  "zfs_filesystem": "zones/e78e4bf2-25c0-4e25-9912-899cfb790e4d",
+  "zpool": "zones",
+  "snapshots": []
+}

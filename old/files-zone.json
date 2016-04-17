@@ -28,13 +28,24 @@
     "zones/files/data",
     "zones/files/data/home/slumos",
     "zones/files/backups",
-    "zones/files/projects"
+    "zones/files/projects",
+    "zones/files/data/timemachine/steven"
   ],
   "filesystems": [
     {
       "type": "lofs",
       "source": "/zones/files/pkgsrc/2014Q2",
       "target": "/opt"
+    }
+    ,{
+      "type": "lofs",
+      "source": "/music",
+      "target": "/music"
+    }
+    ,{
+      "type": "lofs",
+      "source": "/data/ml",
+      "target": "/ml"
     }
   ]
 }
