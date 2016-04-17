@@ -20,7 +20,7 @@
   "owner_uuid": "00000000-0000-0000-0000-000000000000",
   "tmpfs": 1024,
   "hostname": "files",
-  "dns_domain": "local",
+  "dns_domain": "lan",
   "resolvers": [
     "192.168.3.1",
     "8.8.8.8",
