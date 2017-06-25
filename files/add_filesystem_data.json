@@ -1,0 +1,9 @@
+{
+	"add_filesystems": [
+		{
+			"type": "lofs",
+			"source": "/data",
+			"target": "/data"
+		}
+	]
+}

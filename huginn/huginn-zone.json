@@ -1,0 +1,40 @@
+{
+  "autoboot": true,
+  "brand": "joyent",
+  "image_uuid": "e1faace4-e19b-11e5-928b-83849e2fd94a",
+  "tmpfs": 1024,
+  "hostname": "huginn",
+  "dns_domain": "lan",
+  "resolvers": [
+    "192.168.42.1",
+    "8.8.8.8",
+    "8.8.4.4"
+  ],
+  "alias": "huginn",
+  "filesystems": [
+    {
+      "source": "/home/slumos",
+      "target": "/home/slumos",
+      "type": "lofs"
+    },
+    {
+      "source": "/zones/projects",
+      "target": "/projects",
+      "type": "lofs"
+    },
+    {
+      "source": "/zones/pkgsrc/2015Q3",
+      "target": "/opt",
+      "type": "lofs"
+    }
+  ],
+  "nics": [
+    {
+      "interface": "net0",
+      "nic_tag": "admin",
+      "gateway": "192.168.42.1",
+      "ip": "dhcp",
+      "primary": true
+    }
+  ]
+}
